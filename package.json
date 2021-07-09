@@ -1,0 +1,27 @@
+{
+  "name": "terraform-eks-example",
+  "version": "1.0.0",
+  "description": "An Example of EKS set up through Terraform, with a sample app deployed",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./app/index.js",
+    "test": "mocha ./app/*.test.js --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarlDoswell/terraform-EKS-example.git"
+  },
+  "author": "Karl Doswell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KarlDoswell/terraform-EKS-example/issues"
+  },
+  "homepage": "https://github.com/KarlDoswell/terraform-EKS-example#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0"
+  }
+}
