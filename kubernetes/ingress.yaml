@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: example-ingress
+spec:
+  rules:
+    - host: a9b666862c9ad4d13b2d117b4b7fe851-972812492.eu-west-2.elb.amazonaws.com
+      http:
+        paths:
+          - backend:
+              serviceName: my-app
+              servicePort: 8080
+            path: /
